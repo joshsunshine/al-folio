@@ -1,8 +1,31 @@
-Adams:
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
-
-Podolsky:
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
-
-Rosen:
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+Aldrich:
+  url: http://www.cs.cmu.edu/~aldrich/
+Coblenz:
+  url: http://www.cs.umd.edu/~mcoblenz/
+Myers:
+  url: https://www.cs.cmu.edu/~bam/
+Koronkevich:
+  url: https://koronkevi.ch/
+Ye:
+  url: https://www.cs.cmu.edu/~kqy/
+Ni:
+  url: http://www.cs.cmu.edu/~woden/
+Kulkarni:
+  url: http://www.cs.cmu.edu/~chinmayk/
+Crane:
+  url: https://www.cs.cmu.edu/~kmcrane/
+Wise:
+  url: https://www.cs.cmu.edu/~jlwise/
+Tanter:
+  url: https://pleiad.cl/people/etanter
+Jia:
+  url: https://www.andrew.cmu.edu/user/liminjia/
+Kästner: { url: https://www.cs.cmu.edu/~ckaestne/ }
+Le Goues: { url: https://clairelegoues.com/ }
+Widder: { url: http://davidwidder.me/ }
+Bogart: { url: http://quetzal.bogarthome.net/ }
+Coker: { url: http://www.contrib.andrew.cmu.edu/~zfc/ }
+Maass: { url: https://www.linkedin.com/in/mmaass/ }
+Krieger: { url: https://a9.io/ }
+Chasins: { url: https://schasins.com/ }
+Glassman: { url: https://glassmanlab.seas.harvard.edu/ }

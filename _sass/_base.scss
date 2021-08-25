@@ -39,13 +39,13 @@ a, table.table a {
   width: 100%;
 
   .address {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-top: 5px;
-    font-family: monospace;
-    font-size: 1.2rem;
     p {
+      text-align: right;
+      font-size:small;
       display: inline-block;
-      margin: 0;
+      margin: 1px;
     }
   }
 }
@@ -165,7 +165,7 @@ a, table.table a {
 .social {
   text-align: center;
   .contact-icon {
-    font-size: 4rem;
+    font-size: 2rem;
     a {
       color: var(--global-icon-color);
       &:hover {

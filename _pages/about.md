@@ -2,23 +2,28 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description: #
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: whitebackground_tall.jpeg
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Senior Research Felow</p>
+    <p>Director, Undergraduate Research Programs</p>
+    <p>Office: TCS Hall 323</p>
 
-news: true  # includes a list of news items
+news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a Senior Research Fellow in the Institute for Software Research at Carnegie Mellon University. I have broad research interests at the intersection of programming languages and human-computer interaction. I am particularly interested in better understanding of the factors that influence the usability of reusable software components.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am fortunate to work with amazing PhD students. I advise [Jenna Wise](https://www.cs.cmu.edu/~jlwise/) (co-advised by [Jonathan Aldrich](http://www.cs.cmu.edu/~aldrich/)) and [Wode "Nimo" Ni](http://www.cs.cmu.edu/~woden/) (co-advised by [Ken Koedinger](http://pact.cs.cmu.edu/koedinger.html)). I also collaborate with [Katherine Ye](https://www.cs.cmu.edu/~kqy/).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I  direct the  [Research Experience for Undergraduates in interdisciplinary Software Engineering (REUSE)](https://reuse.cs.cmu.edu/) program with [Charlie Garrod](https://www.cs.cmu.edu/~charlie/) and [Claire Le Goues](https://clairelegoues.com/). The program provides an opportunity for a diverse cohort of undergraduates from school accross the country to spend the summer working with the world's leading computer scientists. Students conduct research in a broad range of areas, including: collaboration and teams, computational statistics, computer architecture, diagrams and visualization, data mining and analysis, embedded systems, human-computer interaction, networking, privacy, program synthesis, program repair, programming languages, security, software architecture, societal computing, software requirements, and testing.
+
+
+I completed my PhD in Software Engineering from Carnegie Mellon in December 2013. My dissertation focused on the usability of software libraries with ordering constraints (API protocols). I was advised by [Jonathan Aldrich](http://www.cs.cmu.edu/~aldrich/).
+
+I graduated from Brandeis University in 2004 and worked for almost four years as a software engineer before starting graduate school. I'm married to Kira Sunshine, and we have three children, Akiva, Elisheva, and Tamir.

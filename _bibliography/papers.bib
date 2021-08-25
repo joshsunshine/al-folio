@@ -1,70 +1,661 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+string{aps = {American Physical Society,}}
+@string{CHI = {Proc. of the Conference on Human Factors in Computing Systems (CHI)}}
+@string{OOPSLA = {Proc. ACM SIGPLAN Conference on Object-Oriented Programming Systems Languages and Applications (OOSPLA)}}
+@string{ICSE = {Proc. International Conference on Software Engineering (ICSE)}}
+@string{TOPLAS = {ACM Transactions on Programmming Languages and Systems (TOPLAS)}}
+@string{PLATEAU = {Proc. Workshop at the Intersection Human-Computer Interaction and Programming Languages (PLATEAU)}}
+@string{Onward = {Proc. ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software (Onward!)}}
+@string{ICSENIER = {Proc. International Conference on Software Engineering: New Ideas and Emerging Results (ICSE-NIER)}}
+@string{VLHCC = {Proc. IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)}}
+@string{ECOOP = {Proc. Europoean Conference on Object-Oriented Programming (ECOOP)}}
+@string{TOCHI = {ACM Transactions on Computer-Human Interaction (TOCHI)}}
 
-@book{einstein1956investigations,
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,}
+
+@article{chasins2021PLandHCI,
+author = {Chasins, Sarah E. and Glassman, Elena L. and Sunshine, Joshua},
+title = {PL and HCI: Better Together},
+year = {2021},
+issue_date = {August 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {64},
+number = {8},
+issn = {0001-0782},
+url = {https://doi.org/10.1145/3469279},
+doi = {10.1145/3469279},
+journal = {Commununications of the ACM (CACM)},
+month = jul,
+pages = {98–106},
+abbr={CACM},
+numpages = {9},
+pdf = {chasins2021PLandHCI.pdf},
+selected = {true},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+@inproceedings{estep2021gradualProgramAnalysis,
+  title={Gradual Program Analysis for Null Pointers},
+  author={Sam Estep and
+               Jenna Wise and
+               Jonathan Aldrich and
+               {\'{E}}ric Tanter and
+               Johannes Bader and
+               Joshua Sunshine},
+  booktitle=ECOOP,
+  year={2021},
+  abstract={Static analysis tools typically address the problem of excessive false positives by requiring programmers to explicitly annotate their code. However, when faced with incomplete annotations, many analysis tools are either too conservative, yielding false positives, or too optimistic, resulting in unsound analysis results. In order to flexibly and soundly deal with partially-annotated programs, we propose to build upon and adapt the gradual typing approach to abstract-interpretation-based program analyses. Specifically, we focus on null-pointer analysis and demonstrate that a gradual null-pointer analysis hits a sweet spot, by gracefully applying static analysis where possible and relying on dynamic checks where necessary for soundness. In addition to formalizing a gradual null-pointer analysis for a core imperative language, we build a prototype using the Infer static analysis framework, and present preliminary evidence that the gradual null-pointer analysis reduces false positives compared to two existing null-pointer checkers for Infer. Further, we discuss ways in which the gradualization approach used to derive the gradual analysis from its static counterpart can be extended to support more domains. This work thus provides a basis for future analysis tools that can smoothly navigate the tradeoff between human effort and run-time overhead to reduce the number of reported false positives.},
+  abbr={ECOOP},
+  pdf={estep2021gradualProgramAnalysis.pdf},
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
+@article{coblenz2021PLIERS,
+author = {Coblenz, Michael and Kambhatla, Gauri and Koronkevich, Paulette and Wise, Jenna L. and Barnaby, Celeste and Sunshine, Joshua and Aldrich, Jonathan and Myers, Brad A.},
+title = {PLIERS: A Process That Integrates User-Centered Methods into Programming Language Design},
+pdf={coblenz2021PLIERS.pdf},
+year = {2021},
+issue_date = {October 2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {28},
+number = {4},
+issn = {1073-0516},
+url = {https://doi.org/10.1145/3452379},
+doi = {10.1145/3452379},
+abstract = {Programming language design requires making many usability-related design decisions.
+However, existing HCI methods can be impractical to apply to programming languages:
+languages have high iteration costs, programmers require significant learning time,
+and user performance has high variance. To address these problems, we adapted both
+formative and summative HCI methods to make them more suitable for programming language
+design. We integrated these methods into a new process, PLIERS, for designing programming
+languages in a user-centered way. We assessed PLIERS by using it to design two new
+programming languages. Glacier extends Java to enable programmers to express immutability
+properties effectively and easily. Obsidian is a language for blockchains that includes
+verification of critical safety properties. Empirical studies showed that the PLIERS
+process resulted in languages that could be used effectively by many programmers and
+revealed additional opportunities for language improvement.},
+journal = TOCHI,
+month = jul,
+articleno = {28},
+numpages = {53},
+abbr={TOCHI},
+keywords = {programming language design, Usability of programming languages},
+selected = {true},
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@INPROCEEDINGS{ferreira2021containing,
+  author={Ferreira, Gabriel and Jia, Limin and Sunshine, Joshua and Kästner, Christian},
+  booktitle=ICSE, 
+  title={Containing Malicious Package Updates in npm with a Lightweight Permission System}, 
+  year={2021},
+  pdf={ferreira2021containing.pdf},
+  abbr={ICSE},
+  pages={1334-1346},
+  abstract = {The large amount of third-party packages available in fast-moving software ecosystems, such as Node.js/npm, enables attackers to compromise applications by pushing malicious updates to their package dependencies. Studying the npm repository, we observed that many packages in the npm repository that are used in Node.js applications perform only simple computations and do not need access to filesystem or network APIs. This offers the opportunity to enforce least-privilege design per package, protecting applications and package dependencies from malicious updates. We propose a lightweight permission system that protects Node.js applications by enforcing package permissions at runtime. We discuss the design space of solutions and show that our system makes a large number of packages much harder to be exploited, almost for free.},
+  doi={10.1109/ICSE43902.2021.00121},
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
+
+@article{usableAdvanceTypeSystems,
+  title={Can advanced type systems be usable? An empirical study of ownership, assets, and typestate in obsidian},
+  author={Coblenz, Michael and Aldrich, Jonathan and Myers, Brad A and Sunshine, Joshua},
+  journal={Proceedings of the ACM on Programming Languages (OOPSLA)},
+  volume={4},
+  number={OOPSLA},
+  pages={1--28},
+  year={2020},
+  publisher={ACM New York, NY, USA},
+  abstract={Some blockchain programs (smart contracts) have included serious security vulnerabilities. Obsidian is a new typestate-oriented programming language that uses a strong type system to rule out some of these vulnerabilities. Although Obsidian was designed to promote usability to make it as easy as possible to write programs, strong type systems can cause a language to be difficult to use. In particular, ownership, typestate, and assets, which Obsidian uses to provide safety guarantees, have not seen broad adoption together in popular languages and result in significant usability challenges. We performed an empirical study with 20 participants comparing Obsidian to Solidity, which is the language most commonly used for writing smart contracts today. We observed that Obsidian participants were able to successfully complete more of the programming tasks than the Solidity participants. We also found that the Solidity participants commonly inserted asset-related bugs, which Obsidian detects at compile time.},
+  selected={true},
+  pdf={usableAdvanceTypeSystems.pdf},
+  award={Distinguished Artifact Award},
+  abbr={OOPSLA}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@article{gradVerRecursiveHeapDataStructures,
+  author = {Wise, Jenna and Bader, Johannes and Wong, Cameron and Aldrich, Jonathan and Tanter, \'{E}ric and Sunshine, Joshua},
+  title = {Gradual Verification of Recursive Heap Data Structures},
+  year = {2020},
+  issue_date = {November 2020},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {4},
+  number = {OOPSLA},
+  url = {https://doi.org/10.1145/3428296},
+  doi = {10.1145/3428296},
+  abstract = {Current static verification techniques do not provide good support for incrementality, making it difficult for developers to focus on specifying and verifying the properties and components that are most important. Dynamic verification approaches support incrementality, but cannot provide static guarantees. To bridge this gap, prior work proposed gradual verification, which supports incrementality by allowing every assertion to be complete, partial, or omitted, and provides sound verification that smoothly scales from dynamic to static checking. The prior approach to gradual verification, however, was limited to programs without recursive data structures. This paper extends gradual verification to programs that manipulate recursive, mutable data structures on the heap. We address several technical challenges, such as semantically connecting iso- and equi-recursive interpretations of abstract predicates, and supporting gradual verification of heap ownership. This work thus lays the foundation for future tools that work on realistic programs and support verification within an engineering process in which cost-benefit trade-offs can be made.},
+  journal = {Proceedings of the ACM on Programming Languages (OOPSLA)},
+  month = nov,
+  articleno = {228},
+  numpages = {28},
+  keywords = {separation logic, gradual verification, implicit dynamic frames, recursive predicates},
+  selected = {false},
+  pdf = {gradVerRecursiveHeapDataStructures.pdf},
+  abbr={OOPSLA}
 }
+
+@article{obsidianLanguageDesign,
+  author = {Coblenz, Michael and Oei, Reed and Etzel, Tyler and Koronkevich, Paulette and Baker, Miles and Bloem, Yannick and Myers, Brad A. and Sunshine, Joshua and Aldrich, Jonathan},
+  title = {Obsidian: Typestate and Assets for Safer Blockchain Programming},
+  year = {2020},
+  issue_date = {December 2020},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {42},
+  number = {3},
+  issn = {0164-0925},
+  url = {https://doi.org/10.1145/3417516},
+  doi = {10.1145/3417516},
+  abstract = {Blockchain platforms are coming into use for processing critical transactions among participants who have not established mutual trust. Many blockchains are programmable, supporting smart contracts, which maintain persistent state and support transactions that transform the state. Unfortunately, bugs in many smart contracts have been exploited by hackers. Obsidian is a novel programming language with a type system that enables static detection of bugs that are common in smart contracts today. Obsidian is based on a core calculus, Silica, for which we proved type soundness. Obsidian uses typestate to detect improper state manipulation and uses linear types to detect abuse of assets. We integrated a permissions system that encodes a notion of ownership to allow for safe, flexible aliasing. We describe two case studies that evaluate Obsidian’s applicability to the domains of parametric insurance and supply chain management, finding that Obsidian’s type system facilitates reasoning about high-level states and ownership of resources. We compared our Obsidian implementation to a Solidity implementation, observing that the Solidity implementation requires much boilerplate checking and tracking of state, whereas Obsidian does this work statically.},
+  journal = TOPLAS,
+  month = nov,
+  articleno = {14},
+  numpages = {82},
+  selected = {false},
+  pdf = {obsidianLanguageDesign.pdf},
+  abbr={TOPLAS}
+}
+
+@article{penrose,
+author = {Ye, Katherine and Ni, Wode and Krieger, Max and Ma'ayan, Dor and Wise, Jenna and Aldrich, Jonathan and Sunshine, Joshua and Crane, Keenan},
+title = {Penrose: From Mathematical Notation to Beautiful Diagrams},
+year = {2020},
+issue_date = {July 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {39},
+number = {4},
+issn = {0730-0301},
+url = {https://doi.org/10.1145/3386569.3392375},
+doi = {10.1145/3386569.3392375},
+abstract = {We introduce a system called Penrose for creating mathematical diagrams. Its basic functionality is to translate abstract statements written in familiar math-like notation into one or more possible visual representations. Rather than rely on a fixed library of visualization tools, the visual representation is user-defined in a constraint-based specification language; diagrams are then generated automatically via constrained numerical optimization. The system is user-extensible to many domains of mathematics, and is fast enough for iterative design exploration. In contrast to tools that specify diagrams via direct manipulation or low-level graphics programming, Penrose enables rapid creation and exploration of diagrams that faithfully preserve the underlying mathematical meaning. We demonstrate the effectiveness and generality of the system by showing how it can be used to illustrate a diverse set of concepts from mathematics and computer graphics.},
+journal = {ACM Transaction on Graphics (SIGGRAPH)},
+month = jul,
+articleno = {144},
+numpages = {16},
+keywords = {mathematical diagrams},
+selected = {true},
+pdf = {penrose.pdf},
+abbr={SIGGRAPH}
+}
+
+@inproceedings{conceptualDiagrams,
+author = {Ma'ayan, Dor and Ni, Wode and Ye, Katherine and Kulkarni, Chinmay and Sunshine, Joshua},
+title = {How Domain Experts Create Conceptual Diagrams and Implications for Tool Design},
+year = {2020},
+isbn = {9781450367080},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3313831.3376253},
+doi = {10.1145/3313831.3376253},
+abstract = {Conceptual diagrams are used extensively to understand abstract relationships, explain complex ideas, and solve difficult problems. To illustrate concepts effectively, experts find appropriate visual representations and translate concepts into concrete shapes. This translation step is not supported explicitly by current diagramming tools. This paper investigates how domain experts create conceptual diagrams via semi-structured interviews with 18 participants from diverse backgrounds. Our participants create, adapt, and reuse visual representations using both sketches and digital tools. However, they had trouble using current diagramming tools to transition from sketches and reuse components from earlier diagrams. Our participants also expressed frustration with the slow feedback cycles and barriers to automation of their tools. Based on these results, we suggest four opportunities of diagramming tools---exploration support, representation salience, live engagement, and vocabulary correspondence---that together enable a natural diagramming experience. Finally, we discuss possibilities to leverage recent research advances to develop natural diagramming tools.},
+booktitle = CHI,
+pages = {1–14},
+numpages = {14},
+keywords = {information visualization, diagram authoring, conceptual diagramming},
+location = {Honolulu, HI, USA},
+series = {CHI '20},
+selected = {true},
+pdf = {conceptualDiagrams.pdf},
+html = {https://dl.acm.org/doi/fullHtml/10.1145/3313831.3376253},
+award = {Best Paper Honourable Mention},
+abbr={CHI}
+}
+
+@article{milne2002molecular,
+  title={Molecular architecture and mechanism of an icosahedral pyruvate dehydrogenase complex: a multifunctional catalytic machine},
+  author={Milne, Jacqueline LS and Shi, Dan and Rosenthal, Peter B and Sunshine, Joshua S and Domingo, Gonzalo J and Wu, Xiongwu and Brooks, Bernard R and Perham, Richard N and Henderson, Richard and Subramaniam, Sriram},
+  journal={The EMBO journal},
+  volume={21},
+  number={21},
+  pages={5587--5598},
+  year={2002},
+  publisher={John Wiley \& Sons, Ltd},
+  html={https://www.embopress.org/doi/full/10.1093/emboj/cdf574},
+  url={https://doi.org/10.1093/emboj/cdf574},
+  abstract={Electron cryo‐microscopy of `single particles' is a powerful method to determine the three‐dimensional (3D) architectures of complex cellular assemblies. The pyruvate dehydrogenase multi‐enzyme complex couples the activity of three component enzymes (E1, E2 and E3) in the oxidative decarboxylation of pyruvate to generate acetyl‐CoA, linking glycolysis and the tricarboxylic acid cycle. We report here a 3D model for an 11 MDa, icosahedral pyruvate dehydrogenase sub‐complex, obtained by combining a 28 Å structure derived from electron cryo‐microscopy with previously determined atomic coordinates of the individual E1 and E2 components. A key feature is that the E1 molecules are located on the periphery of the assembly in an orientation that allows each of the 60 mobile lipoyl domains tethered to the inner E2 core to access multiple E1 and E2 active sites from inside the icosahedral complex. This unexpected architecture provides a highly efficient mechanism for active site coupling and catalytic rate enhancement by the motion of the lipoyl domains in the restricted annular region between the inner core and outer shell of the complex.},
+  pdf={milne2002molecular.pdf},
+  abbr={EMBO Journal}
+}
+
+@inproceedings{sunshine2009crying,
+  title={Crying Wolf: An Empirical Study of SSL Warning Effectiveness.},
+  author={Sunshine, Joshua and Egelman, Serge and Almuhimedi, Hazim and Atri, Neha and Cranor, Lorrie Faith},
+  booktitle={Proc. USENIX security symposium},
+  pages={399--416},
+  year={2009},
+  organization={Montreal, Canada},
+  pdf={sunshine2009crying.pdf},
+  abstract={Web users are shown an invalid certificate warning when their browser cannot validate the identity of the websites they are visiting. While these warnings often appear in benign situations, they can also signal a man-in-the-middle attack. We conducted a survey of over 400 Internet users to examine their reactions to and understanding of current SSL warnings. We then designed two new warnings using warnings science principles and lessons learned from the survey. We evaluated warnings used in three popular web browsers and our two warnings in a 100- participant, between-subjects laboratory study. Our warnings performed significantly better than existing warnings, but far too many participants exhibited dangerous behavior in all warning conditions. Our results suggest that, while warnings can be improved, a better approach may be to minimize the use of SSL warnings altogether by blocking users from making unsafe connections and eliminating warnings in benign situations.},
+  abbr={USENIX security}
+}
+
+@inproceedings{aldrich2009typestate,
+  title={Typestate-oriented programming},
+  author={Aldrich, Jonathan and Sunshine, Joshua and Saini, Darpan and Sparks, Zachary},
+  booktitle=Onward,
+  pages={1015--1022},
+  year={2009},
+  pdf={aldrich2009typestate.pdf},
+  abstract={Objects model the world, and state is fundamental to a faithful modeling. Engineers use state machines to understand and reason about state transitions, but programming languages provide little support for reasoning about or implementing these state machines, causing software defects and lost productivity when objects are misused. We propose Typestate-Oriented Programming as a natural extension to the object paradigm, where objects are modeled not just in terms of classes, but in terms of changing states. Each state may have its own representation and methods which may transition the object into a new state. A flow-sensitive, permission-based type system helps developers track which state objects are in. First-class typestates are a powerful abstraction that will help developers model and reuse objects more efficiently and correctly.},
+  abbr={Onward!}
+}
+
+@inproceedings{sunshine2011first,
+  title={First-class state change in plaid},
+  author={Sunshine, Joshua and Naden, Karl and Stork, Sven and Aldrich, Jonathan and Tanter, {\'E}ric},
+  booktitle=OOPSLA,
+  pages={713--732},
+  year={2011},
+  organization={ACM},
+  pdf={sunshine2011first.pdf},
+  abstract={Objects model the world, and state is fundamental to a faithful modeling. Engineers use state machines to understand and reason about state transitions, but programming languages provide little support for building software based on state abstractions. We propose Plaid, a language in which objects are modeled not just in terms of classes, but in terms of changing abstract states. Each state may have its own representation, as well as methods that may transition the object into a new state. A formal model precisely defines the semantics of core Plaid constructs such as state transition and trait-like state composition. We evaluate Plaid through a series of examples taken from the Plaid compiler and the standard libraries of Smalltalk and Java. These examples show how Plaid can more closely model state-based designs, enhancing understandability, enhancing dynamic error checking, and providing reuse benefits.},
+  abbr={OOPSLA}
+}
+
+@inproceedings{saini2010theory,
+  title={A theory of typestate-oriented programming},
+  author={Saini, Darpan and Sunshine, Joshua and Aldrich, Jonathan},
+  booktitle={Proc. Workshop on Formal Techniques for Java-Like Programs (FTfJP)},
+  pages={1--7},
+  year={2010},
+  pdf={saini2010theory.pdf},
+  abstract={Engineers in many disciplines use state machines to reason about system changes, and many object-oriented libraries require their clients to follow state machine protocols. No existing language, however, has native support for state machines, and programmers often lose productivity and introduce errors when trying to understand and follow interaction protocols. The Plaid language extends the object paradigm with explicit states and state transitions, in order to better model object state transitions. In this paper, we present Plaidcore, a core calculus for Plaid, which uses states and permissions to statically guarantee that clients use object protocols correctly.},
+  abbr={FTfJP}
+}
+
+@inproceedings{aldrich2011permission,
+  title={Permission-based programming languages},
+  author={Aldrich, Jonathan and Garcia, Ronald and Hahnenberg, Mark and Mohr, Manuel and Naden, Karl and Saini, Darpan and Stork, Sven and Sunshine, Joshua and Tanter, {\'E}ric and Wolff, Roger},
+  booktitle=ICSENIER,
+  pages={828--831},
+  year={2011},
+  organization={IEEE},
+  pdf={aldrich2011permission.pdf},
+  abstract={Linear permissions have been proposed as a lightweight way to specify how an object may be aliased, and whether those aliases allow mutation. Prior work has demonstrated the value of permissions for addressing many software engineering concerns, including information hiding, protocol checking, concurrency, security, and memory management. We propose the concept of a permission-based programming language - a language whose object model, type system, and runtime are all co-designed with permissions in mind. This approach supports an object model in which the structure of an object can change over time, a type system that tracks changing structure in addition to addressing the other concerns above, and a runtime system that can dynamically check permission assertions and leverage permissions to parallelize code. We sketch the design of the permission-based programming language Plaid, and argue that the approach may provide significant software engineering benefits.},
+  abbr={ICSE NIER}
+}
+
+@inproceedings{sunshine2010dynxml,
+  title={{DynXML}: Safely programming the dynamic web},
+  author={Sunshine, Joshua and Aldrich, Jonathan},
+  booktitle={Proc. Workshop on Analysis and Programming Languages for Web Applications and Cloud Applications (APLWACA)},
+  pages={29--38},
+  year={2010},
+  pdf={sunshine2010dynxml.pdf},
+  abstract={A single web page in a complex web application has a huge number of possible runtime states. Functions, like JavaScript event handlers, that operate on such pages are extremely difficult to write correctly, because there are virtually no guaranteed constraints on the page. In this paper we propose DynXML, a new language for the web which safely and naturally mutates XML trees. Any dynamic web application written in DynXML is statically guaranteed to maintain the page in a subtype of a programmer-defined page type. Furthermore, event handlers are guaranteed to receive the page in the state they expect and leave it in the form expected by the next set of handlers---DynXML prevents page-manipulating programs from going wrong.},
+  abbr={APLWACA}
+}
+
+@inproceedings{saini2009language,
+  title={Language support for distributed proxies},
+  author={Saini, Darpan and Sunshine, Joshua and Aldrich, Jonathan},
+  booktitle={Proc. Workshop on Distributed Objects for the 21st Century (DO21)},
+  pages={1--5},
+  year={2009},
+  pdf={saini2009language.pdf},
+  abstract={Proxies are ubiquitous in distributed systems. They are mainly used to provide transparent access to server objects, and in some cases for additional functions such as caching, message routing, marshalling, and un-marshalling of data. In this paper, we discuss several software engineering problems associated with using proxies in a distributed system. We believe that proxies in distributed systems suffer from: 1) redundant code 2) multiple data translations that have to be written before data is marshalled for transfer over the wire, and 3) in the case when proxies are automatically generated, there is no universal or generic mapping (to date) from XML types to Object types and vice versa. We describe these problems using an example, and discuss the partial solutions provided by prior research. A better understanding of these problems may help show the way towards a future solution.},
+  abbr={DO21}
+}
+
+@techreport{aldrich2012plaid,
+  title={The Plaid language: Typed core specification},
+  author={Aldrich, Jonathan and Beckman, Nels E and Bocchino, Robert and Naden, Karl and Saini, Darpan and Stork, Sven and Sunshine, Joshua},
+  year={2012},
+  institution={CARNEGIE-MELLON UNIV PITTSBURGH PA SCHOOL OF COMPUTER SCIENCE},
+  pdf={aldrich2012plaid.pdf},
+  abstract={Plaid is an object oriented programming language built on two paradigms. First, Plaid is typestate-oriented. Programmers can directly encode the abstract states of objects and use the state change operator to change the state, interface, and representation of an object at runtime. Second, Plaids type system is permission-based. The type of each reference includes an access permission which dictates how the reference can be used and characterizes the permissions to other aliases of the same object. Plaid leverages permissions when tracking the abstract state of references during typechecking. Permissions are also used to infer code that can be safely run in parallel. This document defines the core of the Plaid language, including its source syntax, the semantics of operations involving abstract states, and a type system.},
+  abbr={Technical Report}
+}
+
+@phdthesis{sunshine2013protocol,
+  title={Protocol Programmability},
+  author={Sunshine, Joshua},
+  year={2013},
+  school={Carnegie Mellon University},
+  pdf={sunshine2013protocol.pdf},
+  abstract={Application Programming Interfaces (APIs) often define protocols—restrictions on the order of client calls to API methods. API protocols are common and difficult to follow, which has generated tremendous research into the specification and verification of protocols. However, verification techniques do little to alleviate several major challenges programmers face when using API protocols: fixing protocol violations, learning protocol rules, and finding state transitions. To understand these challenges better, I mined developer forums to identify problems that developers have with protocols. Then, I performed a think-aloud observational study, in which I systematically observed professional programmers struggle with these same problems to get more detail on the nature of their struggles and how they used available resources. In my observations, programmer time was spent primarily on four types of searches of the protocol state space. To alleviate the protocol programmability challenges, I embed state modeling techniques directly into code and developer documentation. I design and formalize a programming language, Plaid, in which objects are modeled not just in terms of classes, but in terms of changing abstract states. Each state may have its own fields and methods, as well as methods that transition the object into a new state. I also developed a documentation tool called Plaiddoc, which is like Javadoc except it organizes methods by state instead of by class and it includes explicit state transitions, state-based type specifications, and rich state relationships. I evaluate Plaid through a series of examples taken from the Plaid compiler and standard libraries of Smalltalk and Java. These examples show how Plaid can more closely model state-based designs, enhancing understandability, automating error checking, and providing reuse benefits. I evaluate Plaiddoc with a user experiment and show that participants using Plaiddoc can perform state search significantly more quickly and accurately than participants using Javadoc.},
+  abbr={PhD Thesis}
+}
+
+@article{stork2014aeminium,
+  title={{\AE}minium: A permission-based concurrent-by-default programming language approach},
+  author={Stork, Sven and Naden, Karl and Sunshine, Joshua and Mohr, Manuel and Fonseca, Alcides and Marques, Paulo and Aldrich, Jonathan},
+  journal=TOPLAS,
+  volume={36},
+  number={1},
+  pages={1--42},
+  year={2014},
+  publisher={ACM New York, NY, USA},
+  pdf={stork2014aeminium.pdf},
+  abstract={Writing concurrent applications is extremely challenging, not only in terms of producing bug-free and maintainable software, but also for enabling developer productivity. In this article we present the Æminium concurrent-by-default programming language. Using Æminium programmers express data dependencies rather than control flow between instructions. Dependencies are expressed using permissions, which are used by the type system to automatically parallelize the application. The Æminium approach provides a modular and composable mechanism for writing concurrent applications, preventing data races in a provable way. This allows programmers to shift their attention from low-level, error-prone reasoning about thread interleaving and synchronization to focus on the core functionality of their applications. We study the semantics of Æminium through μÆminium, a sound core calculus that leverages permission flow to enable concurrent-by-default execution. After discussing our prototype implementation we present several case studies of our system. Our case studies show up to 6.5X speedup on an eight-core machine when leveraging data group permissions to manage access to shared state, and more than 70% higher throughput in a Web server application.},
+  abbr={TOPLAS}
+}
+
+@inproceedings{sunshine2014structuring,
+  title={Structuring documentation to support state search: A laboratory experiment about protocol programming},
+  author={Sunshine, Joshua and Herbsleb, James D and Aldrich, Jonathan},
+  booktitle=ECOOP,
+  pages={157--181},
+  year={2014},
+  organization={Springer, Berlin, Heidelberg},
+  pdf={sunshine2014structuring.pdf},
+  abstract={Application Programming Interfaces (APIs) often define object protocols. Objects with protocols have a finite number of states and in each state a different set of method calls is valid. Many researchers have developed protocol verification tools because protocols are notoriously difficult to follow correctly. However, recent research suggests that a major challenge for API protocol programmers is effectively searching the state space. Verification is an ineffective guide for this kind of search. In this paper we instead propose Plaiddoc, which is like Javadoc except it organizes methods by state instead of by class and it includes explicit state transitions, state-based type specifications, and rich state relationships. We compare Plaiddoc to a Javadoc control in a between-subjects laboratory experiment. We find that Plaiddoc participants complete state search tasks in significantly less time and with significantly fewer errors than Javadoc participants.},
+  abbr={ECOOP}
+}
+
+@inproceedings{sushine2015searching,
+  title={Searching the state space: A qualitative study of API protocol usability},
+  author={Sushine, Joshua and Herbsleb, James D and Aldrich, Jonathan},
+  booktitle={IEEE International Conference on Program Comprehension (ICPC)},
+  pages={82--93},
+  year={2015},
+  organization={IEEE},
+  pdf={sushine2015searching.pdf},
+  abstract={Application Programming Interfaces (APIs) often define protocols -- restrictions on the order of client calls to API methods. API protocols are common and difficult to use, which has generated tremendous research effort in alternative specification, implementation, and verification techniques. However, little is understood about the barriers programmers face when using these APIs, and therefore the research effort may be misdirected. To understand these barriers better, we perform a two-part qualitative study. First, we study developer forums to identify problems that developers have with protocols. Second, we perform a think-aloud observational study, in which we systematically observe professional programmers struggle with these same problems to get more detail on the nature of their struggles and how they use available resources. In our observations, programmer time was spent primarily on four types of searches of the protocol state space. These observations suggest protocol-targeted tools, languages, and verification techniques will be most effective if they enable programmers to efficiently perform state search.},
+  abbr={ICPC}
+}
+
+@inproceedings{coblenz2014considering,
+  title={Considering Productivity Effects of Explicit Type Declarations},
+  author={Coblenz, Michael and Aldrich, Jonathan and Myers, Brad and Sunshine, Joshua},
+  booktitle=PLATEAU,
+  pages={59--61},
+  year={2014},
+  pdf={coblenz2014considering.pdf},
+  abstract={Static types may be used both by the language implementation and directly by the user as documentation. Though much existing work focuses primarily on the implications of static types on the semantics of programs, relatively little work considers the impact on usability that static types provide. Though the omission of static type information may decrease program length and thereby improve readability, it may also decrease readability because users must then frequently derive type information manually while reading programs. As type inference becomes more popular in languages that are in widespread use, it is important to consider whether the adoption of type inference may impact productivity of developers.},
+  abbr={PLATEAU}
+}
+
+@inproceedings{sunshine2014usability,
+  title={Usability Hypotheses in the Design of Plaid},
+  author={Sunshine, Joshua and Aldrich, Jonathan},
+  booktitle=PLATEAU,
+  pages={63--66},
+  year={2014},
+  pdf={sunshine2014usability.pdf},
+  abstract={Plaid is a research programming language with a focus on typestate, permissions, and concurrency. Typestate describes ordering constraints on method calls to an object; Plaid incorporates typestate into both its object model and its type system. Permissions, incorporated into Plaid's type system and runtime, describe whether a reference can be aliased and whether aliases can change that reference. Permissions support static typestate checking, but they also allow Plaid's compiler to automatically parallelize Plaid code. In this paper, we describe the usability-related hypotheses that drove the design of Plaid. We describe the evidence, both informal and scientific, that inspired and (in some cases) validated these hypotheses, and reflect on our experience designing and validating the language.},
+  abbr={PLATEAU}
+}
+
+@inproceedings{coblenz2015course,
+  title={A course-based usability analysis of Cilk Plus and OpenMP},
+  author={Coblenz, Michael and Seacord, Robert and Myers, Brad and Sunshine, Joshua and Aldrich, Jonathan},
+  booktitle=VLHCC,
+  pages={245--249},
+  year={2015},
+  organization={IEEE},
+  pdf={coblenz2015course.pdf},
+  abstract={Cilk Plus and OpenMP are parallel language extensions for the C and C++ programming languages. The CPLEX Study Group of the ISO/IEC C Standards Committee is developing a proposal for a parallel programming extension to C that combines ideas from Cilk Plus and OpenMP. We conducted a preliminary comparison of Cilk Plus and OpenMP in a master's level course on security to evaluate the design tradeoffs in the usability and security of these two approaches. The eventual goal is to inform decision-making within the committee. We found several usability problems worthy of further investigation based on student performance, including declaring and using reductions, multi-line compiler directives, and the understanda-bility of task assignment to threads.},
+  abbr={VL/HCC}
+}
+
+@inproceedings{coker2015evaluating,
+  title={Evaluating the flexibility of the Java sandbox},
+  author={Coker, Zack and Maass, Michael and Ding, Tianyuan and Le Goues, Claire and Sunshine, Joshua},
+  booktitle={Proc. Annual Computer Security Applications Conference (ACSAC)},
+  pages={1--10},
+  year={2015},
+  pdf={coker2015evaluating.pdf},
+  abstract={The ubiquitously-installed Java Runtime Environment (JRE) provides a complex, flexible set of mechanisms that support the execution of untrusted code inside a secure sandbox. However, many recent exploits have successfully escaped the sandbox, allowing attackers to infect numerous Java hosts. We hypothesize that the Java security model affords developers more flexibility than they need or use in practice, and thus its complexity compromises security without improving practical functionality. We describe an empirical study of the ways benign open-source Java applications use and interact with the Java security manager. We found that developers regularly misunderstand or misuse Java security mechanisms, that benign programs do not use all of the vast flexibility afforded by the Java security model, and that there are clear differences between the ways benign and exploit programs interact with the security manager. We validate these results by deriving two restrictions on application behavior that restrict (1) security manager modifications and (2) privilege escalation. We demonstrate that enforcing these rules at runtime stop a representative proportion of modern Java 7 exploits without breaking backwards compatibility with benign applications. These practical rules should be enforced in the JRE to fortify the Java sandbox.},
+  abbr={ACSAC}
+}
+
+@article{maass2016systematic,
+  title={A systematic analysis of the science of sandboxing},
+  author={Maass, Michael and Sales, Adam and Chung, Benjamin and Sunshine, Joshua},
+  journal={PeerJ Computer Science},
+  volume={2},
+  pages={e43},
+  year={2016},
+  publisher={PeerJ Inc.},
+  pdf={maass2016systematic.pdf},
+  html={https://peerj.com/articles/cs-43/},
+  abstract={Sandboxes are increasingly important building materials for secure software systems. In recognition of their potential to improve the security posture of many systems at various points in the development lifecycle, researchers have spent the last several decades developing, improving, and evaluating sandboxing techniques. What has been done in this space? Where are the barriers to advancement? What are the gaps in these efforts? We systematically analyze a decade of sandbox research from five top-tier security and systems conferences using qualitative content analysis, statistical clustering, and graph-based metrics to answer these questions and more. We find that the term “sandbox” currently has no widely accepted or acceptable definition. We use our broad scope to propose the first concise and comprehensive definition for “sandbox” that consistently encompasses research sandboxes. We learn that the sandboxing landscape covers a range of deployment options and policy enforcement techniques collectively capable of defending diverse sets of components while mitigating a wide range of vulnerabilities. Researchers consistently make security, performance, and applicability claims about their sandboxes and tend to narrowly define the claims to ensure they can be evaluated. Those claims are validated using multi-faceted strategies spanning proof, analytical analysis, benchmark suites, case studies, and argumentation. However, we find two cases for improvement: (1) the arguments researchers present are often ad hoc and (2) sandbox usability is mostly uncharted territory. We propose ways to structure arguments to ensure they fully support their corresponding claims and suggest lightweight means of evaluating sandbox usability.},
+  abbr={PeerJ CS}
+}
+
+@inproceedings{coblenz2015comparing,
+  title={Comparing transitive to non-transitive object immutability},
+  author={Coblenz, Michael and Sunshine, Joshua and Myers, Brad A and Weber, Sam and Shull, Forrest},
+  booktitle=PLATEAU,
+  pages={47--48},
+  year={2015},
+  pdf={coblenz2015comparing.pdf},
+  abstract={Many programming languages provide features that express restrictions on which data structures can be changed. For example, C++ includes const and Java includes final. Languages that are in widespread use typically provide non-transitive immutability: when a reference is specified to be immutable or read-only, the object referenced can still reference mutable structures. However, some languages, particularly research languages, provide transitive immutability, in which immutable objects can only reference other immutable objects (with some exceptions). We are designing a lab study of programmers to elucidate the differences in programmer effectiveness between these two approaches.},
+  abbr={PLATEAU}
+}
+
+@inproceedings{ahmad2015enforcing,
+  title={Enforcing fine-grained security and privacy policies in an ecosystem within an ecosystem},
+  author={Ahmad, Waqar and Sunshine, Joshua and K{\"a}stner, Christian and Wynne, Adam},
+  booktitle={Workshop on Mobile Development Lifecycle (MobileDeLi)},
+  pages={28--34},
+  year={2015},
+  pdf={ahmad2015enforcing.pdf},
+  abstract={Smart home automation and IoT promise to bring many advantages but they also expose their users to certain security and privacy vulnerabilities. For example, leaking the information about the absence of a person from home or the medicine somebody is taking may have serious security and privacy consequences for home users and potential legal implications for providers of home automation and IoT platforms. We envision that a new ecosystem within an existing smartphone ecosystem will be a suitable platform for distribution of apps for smart home and IoT devices. Android is increasingly becoming a popular platform for smart home and IoT devices and applications. Built-in security mechanisms in ecosystems such as Android have limitations that can be exploited by malicious apps to leak users' sensitive data to unintended recipients. For instance, Android enforces that an app requires the Internet permission in order to access a web server but it does not control which servers the app talks to or what data it shares with other apps. Therefore, sub-ecosystems that enforce additional fine-grained custom policies on top of existing policies of the smartphone ecosystems are necessary for smart home or IoT platforms. To this end, we have built a tool that enforces additional policies on inter-app interactions and permissions of Android apps. We have done preliminary testing of our tool on three proprietary apps developed by a future provider of a home automation platform. Our initial evaluation demonstrates that it is possible to develop mechanisms that allow definition and enforcement of custom security policies appropriate for ecosystems of the like smart home automation and IoT.},
+  abbr={MobileDeLi}
+}
+
+@inproceedings{coblenz2016exploring,
+  title={Exploring language support for immutability},
+  author={Coblenz, Michael and Sunshine, Joshua and Aldrich, Jonathan and Myers, Brad and Weber, Sam and Shull, Forrest},
+  booktitle=ICSE,
+  pages={736--747},
+  year={2016},
+  organization={IEEE},
+  pdf={coblenz2016exploring.pdf},
+  abstract={Programming languages can restrict state change by preventing it entirely (immutability) or by restricting which clients may modify state (read-only restrictions). The benefits of immutability and read-only restrictions in software structures have been long-argued by practicing software engineers, researchers, and programming language designers. However, there are many proposals for language mechanisms for restricting state change, with a remarkable diversity of techniques and goals, and there is little empirical data regarding what practicing software engineers want in their tools and what would benefit them. We systematized the large collection of techniques used by programming languages to help programmers prevent undesired changes in state. We interviewed expert software engineers to discover their expectations and requirements, and found that important requirements, such as expressing immutability constraints, were not reflected in features available in the languages participants used. The interview results informed our design of a new language extension for specifying immutability in Java. Through an iterative, participatory design process, we created a tool that reflects requirements from both our interviews and the research literature.},
+  abbr={ICSE}
+}
+
+@inproceedings{ahmad2016inter,
+  title={Inter-app communication in android: Developer challenges},
+  author={Ahmad, Waqar and K{\"a}stner, Christian and Sunshine, Joshua and Aldrich, Jonathan},
+  booktitle={Proc. Working Conference on Mining Software Repositories (MSR)},
+  pages={177--188},
+  year={2016},
+  organization={IEEE},
+  pdf={ahmad2016inter.pdf},
+  abstract={The Android platform is designed to support mutually un-trusted third-party apps, which run as isolated processes but may interact via platform-controlled mechanisms, called Intents. Interactions among third-party apps are intended and can contribute to a rich user experience, for example, the ability to share pictures from one app with another. The Android platform presents an interesting point in a design space of module systems that is biased toward isolation, extensibility, and untrusted contributions. The Intent mechanism essentially provides message channels among modules, in which the set of message types is extensible. However, the module system has design limitations including the lack of consistent mechanisms to document message types, very limited checking that a message conforms to its specifications, the inability to explicitly declare dependencies on other modules, and the lack of checks for backward compatibility as message types evolve over time. In order to understand the degree to which these design limitations result in real issues, we studied a broad corpus of apps and cross-validated our results against app documentation and Android support forums. Our findings suggest that design limitations do in- deed cause development problems. Based on our results, we outline further research questions and propose possible mitigation strategies.},
+  abbr={MSR}
+}
+
+@inproceedings{yost2016software,
+  title={Software development practices, barriers in the field and the relationship to software quality},
+  author={Yost, Beth and Coblenz, Michael and Myers, Brad and Sunshine, Joshua and Aldrich, Jonathan and Weber, Sam and Patron, Matthew and Heeren, Melissa and Krueger, Shelley and Pfaff, Mark},
+  booktitle={Proc. ACM/IEEE Symposium on Empirical Software Engineering and Measurement (ESEM)},
+  pages={1--6},
+  year={2016},
+  pdf={yost2016software.pdf},
+  abstract={Context: Critical software systems developed for the government continue to be of lower quality than expected, despite extensive literature describing best practices in software engineering. Goal: We wanted to better understand the extent of certain issues in the field and the relationship to software quality. Method: We surveyed fifty software development professionals and asked about practices and barriers in the field and the resulting software quality. Results: There is evidence of certain problematic issues for developers and specific quality characteristics that seem to be affected. Conclusions: This motivates future work to address the most problematic barriers and issues impacting software quality.},
+  abbr={ESEM}
+}
+
+@inproceedings{coblenz2017glacier,
+  title={Glacier: Transitive class immutability for Java},
+  author={Coblenz, Michael and Nelson, Whitney and Aldrich, Jonathan and Myers, Brad and Sunshine, Joshua},
+  booktitle=ICSE,
+  pages={496--506},
+  year={2017},
+  organization={IEEE},
+  pdf={coblenz2017glacier.pdf},
+  abstract={Though immutability has been long-proposed as a way to prevent bugs in software, little is known about how to make immutability support in programming languages effective for software engineers. We designed a new formalism that extends Java to support transitive class immutability, the form of immutability for which there is the strongest empirical support, and implemented that formalism in a tool called Glacier. We applied Glacier successfully to two real-world systems. We also compared Glacier to Java's final in a user study of twenty participants. We found that even after being given instructions on how to express immutability with final, participants who used final were unable to express immutability correctly, whereas almost all participants who used Glacier succeeded. We also asked participants to make specific changes to immutable classes and found that participants who used final all incorrectly mutated immutable state, whereas almost all of the participants who used Glacier succeeded. Glacier represents a promising approach to enforcing immutability in Java and provides a model for enforcement in other languages.},
+  abbr={ICSE}
+}
+
+@article{ye2017designing,
+  title={Designing extensible, domain-specific languages for mathematical diagrams},
+  author={Ye, Katherine and Crane, Keenan and Aldrich, Jonathan and Sunshine, Joshua},
+  journal={POPL Off the Beaten Track Workshop},
+  year={2017},
+  pdf={ye2017designing.pdf},
+  abbr={OBT}
+}
+
+@article{ni2017substance,
+  title={SUBSTANCE and STYLE: domain-specific languages for mathematical diagrams},
+  author={Ni, Wode and Ye, Katherine and Sunshine, Joshua and Aldrich, Jonathan and Crane, Keenan},
+  journal={Domain-Specific Language Design and Implementation (DSLDI)},
+  year={2017},
+  abstract={Creating mathematical diagrams is essential for both developing one’s intuition and conveying it to others. However, formalizing diagrams in most general-purpose tools requires painstaking low-level manipulation of shapes and positions. We report on early work on PENROSE, a system we are building to automatically visualize mathematics from notation. PENROSE comprises two languages: SUBSTANCE, a domain-specific language that mimics the declarativeness of mathematical notation, and STYLE, a styling language that concisely specifies the visual semantics of the notation. Our system can automatically visualize set theory expressions with user-defined styles, and it can visualize abstract definitions of functions by producing concrete examples. We plan to extend the system to more domains of math.},
+  pdf={ni2017substance.pdf},
+  abbr={DSLDI}
+}
+
+@inproceedings{weber2017empirical,
+  title={Empirical studies on the security and usability impact of immutability},
+  author={Weber, Sam and Coblenz, Michael and Myers, Brad and Aldrich, Jonathan and Sunshine, Joshua},
+  booktitle={Proc. IEEE Cybersecurity Development (SecDev)},
+  pages={50--53},
+  year={2017},
+  organization={IEEE},
+  pdf={weber2017empirical.pdf},
+  abstract={Although it is well-known that API design has a large and long-term impact on security, the literature contains few substantial guidelines for practitioners on how to design APIs that improve security. Even fewer of those guidelines have been evaluated empirically. Security professionals have proposed that software engineers choose immutable APIs and architectures to enhance security. Unfortunately, prior empirical research argued that immutablity decreases API usability. This paper brings together the results from a number of previous papers that together aim to show that immutability, when carefully designed using usability as a first-class requirement, can have positive effects on both usability and security. We also make observations on study design in this field.},
+  abbr={SecDev}
+}
+
+@inproceedings{coblenz2018interdisciplinary,
+  title={Interdisciplinary programming language design},
+  author={Coblenz, Michael and Aldrich, Jonathan and Myers, Brad A and Sunshine, Joshua},
+  booktitle=Onward,
+  pages={133--146},
+  year={2018},
+  pdf={coblenz2018interdisciplinary.pdf},
+  abstract={Approaches for programming language design used commonly in the research community today center around theoretical and performance-oriented evaluation. Recently, researchers have been considering more approaches to language design, including the use of quantitative and qualitative user studies that examine how different designs might affect programmers. In this paper, we argue for an interdisciplinary approach that incorporates many different methods in the creation and evaluation of programming languages. We argue that the addition of user-oriented design techniques can be helpful at many different stages in the programming language design process.},
+  abbr={Onward!}
+}
+
+@inproceedings{ruchkin2018ipl,
+  title={IPL: An integration property language for multi-model cyber-physical systems},
+  author={Ruchkin, Ivan and Sunshine, Joshua and Iraci, Grant and Schmerl, Bradley and Garlan, David},
+  booktitle={Proc. International Symposium on Formal Methods (FM)},
+  pages={165--184},
+  year={2018},
+  organization={Springer, Cham},
+  pdf={ruchkin2018ipl.pdf},
+  abstract={Design and verification of modern systems requires diverse models, which often come from a variety of disciplines, and it is challenging to manage their heterogeneity – especially in the case of cyber-physical systems. To check consistency between models, recent approaches map these models to flexible static abstractions, such as architectural views. This model integration approach, however, comes at a cost of reduced expressiveness because complex behaviors of the models are abstracted away. As a result, it may be impossible to automatically verify important behavioral properties across multiple models, leaving systems vulnerable to subtle bugs. This paper introduces the Integration Property Language (IPL) that improves integration expressiveness using modular verification of properties that depend on detailed behavioral semantics while retaining the ability for static system-wide reasoning. We prove that the verification algorithm is sound and analyze its termination conditions. Furthermore, we perform a case study on a mobile robot to demonstrate IPL is practically useful and evaluate its performance.},
+  abbr={FM}
+}
+
+@inproceedings{ingibergsson2018experience,
+  title={Experience report: Studying the readability of a domain specific language},
+  author={Ingibergsson, Johann Thor Mogensen and Hanenberg, Stefan and Sunshine, Joshua and Schultz, Ulrik Pagh},
+  booktitle={Proc. ACM Symposium on Applied Computing (SAC)},
+  pages={2030--2033},
+  year={2018},
+  abstract={Domain-specific languages (DSLs) are commonly expected to improve communication with domain experts compared to general-purpose programming languages (GPLs). However, there is a huge gap in the literature concerning how evidence can be given for this expected improvement---a phenomenon that is not only known from DSLs, but also from GPLs in general. This paper presents an experience report of applying an iterative process for evaluating DSL readability for a given DSL in the context of safety-critical software in robotics. The goal of this process is to conduct a randomized controlled trial that gives evidence for the better readability of the DSL in comparison to the readability of a GPL. In this experience report, we describe common pitfalls we identified and possible solutions to overcome these problems in the future.},
+  pdf={ingibergsson2018experience.pdf},
+  abbr={SAC}
+}
+
+@inproceedings{barnaby2017user,
+  title={A user study to inform the design of the obsidian blockchain dsl},
+  author={Barnaby, Celeste and Coblenz, Michael and Etzel, Tyler and Kanal, Eliezer and Sunshine, Joshua and Myers, Brad and Aldrich, Jonathan},
+  booktitle=PLATEAU,
+  year={2017},
+  abstract={Blockchain platforms such as Ethereum and Hyperledger facilitate transactions between parties that have not established trust. Increased interest in these platforms has motivated the design of programming languages such as Solidity, which allow users to create blockchain programs. However, there have been several recent instances where Solidity programs have contained bugs that have been exploited. The security of blockchain programs is especially important given that they commonly involve the exchange of money or other objects with real-world value. We are currently developing a blockchain-based programming language called Obsidian with the goal of minimizing the risk of common security vulnerabilities. We are designing this language in a humancentered way, conducting exploratory user studies with a natural programming approach to inform our design choices. In this paper, we discuss our approach to the design of a user study, as well as our preliminary findings.},
+  pdf={barnaby2017user.pdf},
+  abbr={PLATEAU}
+}
+
+@inproceedings{coblenz2019smarter,
+  title={Smarter smart contract development tools},
+  author={Coblenz, Michael and Sunshine, Joshua and Aldrich, Jonathan and Myers, Brad},
+  booktitle={Workshop on Emerging Trends in Software Engineering for Blockchain (WETSEB)},
+  pages={48--51},
+  year={2019},
+  organization={IEEE},
+  pdf={coblenz2019smarter.pdf},
+  abstract={Much recent work focuses on finding bugs and security vulnerabilities in smart contracts written in existing languages. Although this approach may be helpful, it does not address flaws in the underlying programming language, which can facilitate writing buggy code in the first place. We advocate a re-thinking of the blockchain software engineering tool set, starting with the programming language in which smart contracts are written. In this paper, we propose and justify requirements for a new generation of blockchain software development tools. New tools should (1) consider users' needs as a primary concern; (2) seek to facilitate safe development by detecting relevant classes of serious bugs at compile time; (3) as much as possible, be blockchain-agnostic, given the wide variety of different blockchain platforms available, and leverage the properties that are common among blockchain environments to improve safety and developer effectiveness.},
+  abbr={WETSEB}
+}
+
+@inproceedings{garrett2019detecting,
+  title={Detecting suspicious package updates},
+  author={Garrett, Kalil and Ferreira, Gabriel and Jia, Limin and Sunshine, Joshua and K{\"a}stner, Christian},
+  booktitle=ICSENIER,
+  pages={13--16},
+  year={2019},
+  organization={IEEE},
+  pdf={garrett2019detecting},
+  abstract={With an increased level of automation provided by package managers, which sometimes allow updates to be installed automatically, malicious package updates are becoming a real threat in software ecosystems. To address this issue, we propose an approach based on anomaly detection, to identify suspicious updates based on security-relevant features that attackers could use in an attack. We evaluate our approach in the context of Node.js/npm ecosystem, to show its feasibility in terms of reduced review effort and the correct identification of a confirmed malicious update attack. Although we do not expect it to be a complete solution in isolation, we believe it is an important security building block for software ecosystems.},
+  abbr={ICSE NIER}
+}
+
+@inproceedings{widder2019barriers,
+  title={Barriers to Reproducible Scientific Programming},
+  author={Widder, David Gray and Sunshine, Joshua and Fickas, Stephen},
+  booktitle=VLHCC,
+  pages={217--221},
+  year={2019},
+  organization={IEEE},
+  pdf={widder2019barriers},
+  abstract={Scientists often write code to support their science. To investigate the state of scientific programming on smaller teams in diverse scientific contexts, we interviewed eleven sci- entists about their programming practices, and the extent to which they adhere to six common best practices. We argue that these practices are essential to the core scientific value of reproducibility. Our results indicate that many of these practices are not followed because of barriers such as low self- efficacy and misaligned incentive structures. We conclude with suggested improvements to the tooling, education, and incentives of scientific programmers.},
+  abbr={VL/HCC}
+}
+
+@inproceedings{cohen2020designing,
+  author =	{Anael Kuperwajs Cohen and Wode Ni and Joshua Sunshine},
+  title =	{Designing Declarative Language Tutorials: A Guided and Individualized Approach},
+  pages =	{4:1--4:6},
+  series =	{OpenAccess Series in Informatics (OASIcs)},
+  booktitle=PLATEAU,
+  year =	{2020},
+  volume =	{76},
+  editor =	{Sarah Chasins and Elena L. Glassman and Joshua Sunshine},
+  publisher =	{Schloss Dagstuhl--Leibniz-Zentrum fuer Informatik},
+  address =	{Dagstuhl, Germany},
+  URL =		{https://drops.dagstuhl.de/opus/volltexte/2020/11958},
+  doi =		{10.4230/OASIcs.PLATEAU.2019.4},
+  annote =	{Keywords: Declarative Programming, Programming Language Tutorial, Visualizations},
+  abstract = {The ability to declare what a program should include rather than how these features should be implemented makes declarative languages very useful in many visual output programs. The wide-ranging uses of these programs, in domains ranging from architecture to web programming to data visualization, encourages us to find an effective method to teach them. Traditional tutorial systems are usually non-interactive and have a gap between the learning and application. This can leave the user frustrated without a way to move forward in the learning process. A general lack of guidance can lead the student down an incorrect path. To prevent these difficulties, we propose a guided tour followed by novel question types that both direct the student’s learning and creates a focused environment to practice individual skills. Lastly, we propose a study to test the hypothesis that this tutorial is quicker to complete and results in a greater understanding of the declarative language.},
+  pdf={cohen2020designing.pdf},
+  abbr={PLATEAU}
+}
+
+@inproceedings{coker2019qualitative,
+  title={A qualitative study on framework debugging},
+  author={Coker, Zack and Widder, David Gray and Le Goues, Claire and Bogart, Christopher and Sunshine, Joshua},
+  booktitle={IEEE International Conference on Software Maintenance and Evolution (ICSME)},
+  pages={568--579},
+  year={2019},
+  organization={IEEE},
+  pdf={coker2019qualitative.pdf},
+  abstract={Features of frameworks, such as inversion of control and the structure of framework applications, require develop- ers to adjust their programming and debugging strategies as compared to sequential programs. However, the benefits and challenges of framework debugging are not fully understood, and gaining this knowledge could provide guidance in debugging strategies and framework tool design. To gain insight into the framework application debugging process, we performed two human studies investigating how developers fix applications that use a framework API incorrectly. These studies focused on the Android Fragment class and the ROS framework. We analyzed the results of the studies using a mixed-methods approach, using techniques from qualitative approaches. Our analysis found that participants benefited from the structure of frameworks and the pre-made solutions to common problems in the domain. Participants encountered challenges with understanding frame- work abstractions, and had particular difficulty with inversion of control and object protocol issues. When compared to prior work on debugging, these results show that framework applications have unique debugging challenges.},
+  abbr={ICSME}
+}
+
+@inproceedings{kambhatla2020pilot,
+  author =	{Gauri Kambhatla and Michael Coblenz and Reed Oei and Joshua Sunshine and Jonathan Aldrich and Brad A. Myers},
+  title =	{{A Pilot Study of the Safety and Usability of the Obsidian Blockchain Programming Language}},
+  booktitle =	PLATEAU,
+  pages =	{2:1--2:11},
+  series =	{OpenAccess Series in Informatics (OASIcs)},
+  ISBN =	{978-3-95977-135-1},
+  ISSN =	{2190-6807},
+  year =	{2020},
+  volume =	{76},
+  editor =	{Sarah Chasins and Elena L. Glassman and Joshua Sunshine},
+  publisher =	{Schloss Dagstuhl--Leibniz-Zentrum fuer Informatik},
+  address =	{Dagstuhl, Germany},
+  URL =		{https://drops.dagstuhl.de/opus/volltexte/2020/11956},
+  URN =		{urn:nbn:de:0030-drops-119564},
+  doi =		{10.4230/OASIcs.PLATEAU.2019.2},
+  annote =	{Keywords: smart contracts, programming language user study, language usability},
+  abstract = {Although blockchains have been proposed for building systems that execute critical transactions, security vulnerabilities have plagued programs that are deployed on blockchain systems. The programming language Obsidian was developed with the purpose of statically preventing some of the more common of these security risks, specifically the loss of resources and improper manipulation of objects. The question then is whether Obsidian’s novel features impact the usability of the language. In this paper, we begin to evaluate Obsidian with respect to usability, and develop materials for a quantitative user study through a sequence of pilot studies. Specifically, our goal was to assess a) potential usability problems of Obsidian, b) the effectiveness of a tutorial for participants to learn the language, and c) the design of programming tasks to evaluate performance using the language. Our preliminary results tentatively suggest that the complexity of Obsidian’s features do not hinder usability, although these results will be validated in the quantitative study. We also observed the following factors as being important in a given programmer’s ability to learn Obsidian: a) integrating very frequent opportunities for practice of the material - e.g., after less than a page of material at a time, and b) previous programming experience and self-efficacy.},
+  pdf = {kambhatla2020pilot.pdf},
+  abbr={PLATEAU}
+}
+
+@inproceedings{coblenz2018user,
+  title={User-centered design of permissions, typestate, and ownership in the Obsidian blockchain language},
+  author={Coblenz, Michael and Aldrich, Jonathan and Sunshine, Joshua and Myers, Brad A},
+  booktitle={Workshop on HCI for Blockchain: Studying, Designing, Critiquing and Envisioning Distributed Ledger Technologies},
+  year={2018},
+  pdf={coblenz2018user.pdf},
+  abstract={Blockchains have been proposed to support transactions on distributed, shared state, but hackers have exploited security vulnerabilities in existing programs. In this paper, we describe how we are applying user-centered design in the creation of Obsidian, a new language that uses typestate and linearity to support stronger safety guarantees than current approaches for programming blockchain systems. We show how an iterative, user-centered design process can be used to elicit design feedback and show how we incorporated that feedback into the language. We found that formative user studies, even with a small number of participants, can lead to useful insights in language design. The study results motivated important language changes, such as adding explicit ownership transfer syntax and changing the structure of state initialization in state transitions.},
+  abbr={HCI Blockchain}
+}
+
