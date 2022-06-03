@@ -8,7 +8,7 @@ profile:
   align: right
   image: whitebackground_tall.jpeg
   address: >
-    <p>Senior Research Felow</p>
+    <p>Assistant Professor</p>
     <p>Director, Undergraduate Research Programs</p>
     <p>Office: TCS Hall 323</p>
 
