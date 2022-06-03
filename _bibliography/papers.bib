@@ -11,8 +11,41 @@ string{aps = {American Physical Society,}}
 @string{ICSENIER = {Proc. International Conference on Software Engineering: New Ideas and Emerging Results (ICSE-NIER)}}
 @string{VLHCC = {Proc. IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)}}
 @string{ECOOP = {Proc. Europoean Conference on Object-Oriented Programming (ECOOP)}}
+@string{UIST = {Proc. Symposium on User Interface Software and Technology (UIST)}}
 @string{TOCHI = {ACM Transactions on Computer-Human Interaction (TOCHI)}}
 
+
+@inproceedings{ni2021recode,
+  author = {Ni, Wode and Sunshine, Joshua and Le, Vu and Gulwani, Sumit and Barik, Titus},
+  title = {ReCode: A Lightweight Find-and-Replace Interaction in the IDE for Transforming Code by Example},
+  url = {https://doi.org/10.1145/3472749.3474748},
+  doi = {10.1145/3472749.3474748},
+  abstract = { Software developers frequently confront a recurring challenge of making code transformations similar
+  but not entirely identical code changes in many places in their integrated development
+  environments. Through formative interviews (n = 7), we found that developers were
+  aware of many tools intended to help with code transformations, but often made their
+  changes manually because these tools required too much expertise or effort to be able
+  to use effectively. To address these needs, we built an extension for Visual Studio
+  Code, called reCode. reCode improves the familiar find-and-replace experience by allowing
+  the developer to specify a straightforward search term to identify relevant locations,
+  and then demonstrate their intended changes by simply typing a change directly in
+  the editor. Using programming by example, reCode automatically learns a more general
+  code transformation and displays these transformations as before-and-after differences
+  inline, with clickable actions to interactively accept, reject, or refine the proposed
+  changes. In our usability evaluation (n = 12), developers reported that this mixed-initiative,
+  example-driven experience is intuitive, complements their existing workflow, and offers
+  a unified approach to conveniently tackle a variety of common yet frustrating scenarios
+  for code transformations.},
+  booktitle = UIST,
+  pages = {258--269},
+  numpages = {12},
+  keywords = {code transformation, program synthesis, find-and-replace},
+  year = {2021},
+  abbr = {UIST},
+  pdf = {ni2021recode.pdf},
+  html = {https://dl.acm.org/doi/fullHtml/10.1145/3472749.3474748},
+  selected = {true}
+}
 
 @article{chasins2021PLandHCI,
 author = {Chasins, Sarah E. and Glassman, Elena L. and Sunshine, Joshua},
@@ -33,6 +66,7 @@ abbr={CACM},
 numpages = {9},
 pdf = {chasins2021PLandHCI.pdf},
 selected = {true},
+html = {https://cacm.acm.org/magazines/2021/8/254314-pl-and-hci/fulltext},
 }
 
 @inproceedings{estep2021gradualProgramAnalysis,
@@ -107,7 +141,7 @@ selected = {true},
   year={2020},
   publisher={ACM New York, NY, USA},
   abstract={Some blockchain programs (smart contracts) have included serious security vulnerabilities. Obsidian is a new typestate-oriented programming language that uses a strong type system to rule out some of these vulnerabilities. Although Obsidian was designed to promote usability to make it as easy as possible to write programs, strong type systems can cause a language to be difficult to use. In particular, ownership, typestate, and assets, which Obsidian uses to provide safety guarantees, have not seen broad adoption together in popular languages and result in significant usability challenges. We performed an empirical study with 20 participants comparing Obsidian to Solidity, which is the language most commonly used for writing smart contracts today. We observed that Obsidian participants were able to successfully complete more of the programming tasks than the Solidity participants. We also found that the Solidity participants commonly inserted asset-related bugs, which Obsidian detects at compile time.},
-  selected={true},
+  selected={false},
   pdf={usableAdvanceTypeSystems.pdf},
   award={Distinguished Artifact Award},
   abbr={OOPSLA}
@@ -658,4 +692,16 @@ abbr={CHI}
   abstract={Blockchains have been proposed to support transactions on distributed, shared state, but hackers have exploited security vulnerabilities in existing programs. In this paper, we describe how we are applying user-centered design in the creation of Obsidian, a new language that uses typestate and linearity to support stronger safety guarantees than current approaches for programming blockchain systems. We show how an iterative, user-centered design process can be used to elicit design feedback and show how we incorporated that feedback into the language. We found that formative user studies, even with a small number of participants, can lead to useful insights in language design. The study results motivated important language changes, such as adding explicit ownership transfer syntax and changing the structure of state initialization in state transitions.},
   abbr={HCI Blockchain}
 }
+
+@inproceedings{coblenz2018user,
+  title={User-centered design of permissions, typestate, and ownership in the Obsidian blockchain language},
+  author={Coblenz, Michael and Aldrich, Jonathan and Sunshine, Joshua and Myers, Brad A},
+  booktitle={Workshop on HCI for Blockchain: Studying, Designing, Critiquing and Envisioning Distributed Ledger Technologies},
+  year={2018},
+  pdf={coblenz2018user.pdf},
+  abstract={Blockchains have been proposed to support transactions on distributed, shared state, but hackers have exploited security vulnerabilities in existing programs. In this paper, we describe how we are applying user-centered design in the creation of Obsidian, a new language that uses typestate and linearity to support stronger safety guarantees than current approaches for programming blockchain systems. We show how an iterative, user-centered design process can be used to elicit design feedback and show how we incorporated that feedback into the language. We found that formative user studies, even with a small number of participants, can lead to useful insights in language design. The study results motivated important language changes, such as adding explicit ownership transfer syntax and changing the structure of state initialization in state transitions.},
+  abbr={HCI Blockchain}
+}
+
+
 
