@@ -5,6 +5,7 @@ title: publications
 description:
 years:
   [
+    2023,
     2021,
     2020,
     2019,

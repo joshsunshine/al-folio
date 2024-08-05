@@ -13,7 +13,39 @@ string{aps = {American Physical Society,}}
 @string{ECOOP = {Proc. Europoean Conference on Object-Oriented Programming (ECOOP)}}
 @string{UIST = {Proc. Symposium on User Interface Software and Technology (UIST)}}
 @string{TOCHI = {ACM Transactions on Computer-Human Interaction (TOCHI)}}
+@string{TOSEM = {ACM Transactions on Software Engineering and Methodology (TOSEM)}}
+@string{SANER = {IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)}}
+@string{ESECFSE = {Proc. of the ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)}}
 
+
+@inproceedings{davis2024nanofuzz,
+  title={Nanofuzz: A usable tool for automatic test generation},
+  author={Davis, Matthew and Choi, Sangheon and Estep, Sam and Myers, Brad and Sunshine, Joshua},
+  booktitle=ESECFSE,
+  pages={1114--1126},
+  year={2023},
+  doi = {10.1145/3611643.3616327},
+  abstract = {In the United States alone, software testing labor is estimated to cost $48 billion USD per year. Despite widespread test execution automation and automation in other areas of software engineering, test suites continue to be created manually by software engineers. We have built a test generation tool, called NaNofuzz, that helps users find bugs in their code by suggesting tests where the output is likely indicative of a bug, e.g., that return NaN (not-a-number) values. NaNofuzz is an interactive tool embedded in a development environment to fit into the programmer's workflow. NaNofuzz tests a function with as little as one button press, analyses the program to determine inputs it should evaluate, executes the program on those inputs, and categorizes outputs to prioritize likely bugs. We conducted a randomized controlled trial with 28 professional software engineers using NaNofuzz as the intervention treatment and the popular manual testing tool, Jest, as the control treatment. Participants using NaNofuzz on average identified bugs more accurately (p < .05, by 30\%), were more confident in their tests (p < .03, by 20\%), and finished their tasks more quickly (p < .007, by 30\%).},
+  pdf = {davis2024nanofuzz.pdf},
+  abbr={ESEC/FSE}
+}
+
+@article{davis2023purse,
+  author = {Davis, Matthew C. and Aghayi, Emad and LaToza, Thomas D. and Wang, Xiaoyin and Myers, Brad A. and Sunshine, Joshua},
+  title = {What’s (Not) Working in Programmer User Studies?},
+  year = {2023},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  issn = {1049-331X},
+  url = {https://doi.org/10.1145/3587157},
+  doi = {10.1145/3587157},
+  abstract = {A key goal of software engineering research is to improve the environments, tools, languages, and techniques programmers use to efficiently create quality software. Successfully designing these tools and demonstrating their effectiveness involves engaging with tool users — software engineers. Researchers often want to conduct user studies of software engineers to collect direct evidence. However, running user studies can be difficult, and researchers may lack solution strategies to overcome the barriers, so they may avoid user studies. To understand the challenges researchers face when conducting programmer user studies, we interviewed 26 researchers. Based on the analysis of interview data we contribute: (i) a taxonomy of 18 barriers researchers encounter; (ii) 23 solution strategies some researchers use to address 8 of the 18 barriers in their own studies; and (iii) 4 design ideas, which we adapted from the behavioral science community, that may lower 8 additional barriers. To validate the design ideas, we held an in-person all-day focus group with 16 researchers.},
+  journal = TOSEM,
+  month = {mar},
+  keywords = {meta study, experiments, research methodology, user study, human subjects, empirical software engineering, human participants},
+  pdf = {davis2023purse.pdf},
+  abbr = {TOSEM},
+}
 
 @inproceedings{ni2021recode,
   author = {Ni, Wode and Sunshine, Joshua and Le, Vu and Gulwani, Sumit and Barik, Titus},
@@ -128,6 +160,21 @@ selected = {true},
   pages={1334-1346},
   abstract = {The large amount of third-party packages available in fast-moving software ecosystems, such as Node.js/npm, enables attackers to compromise applications by pushing malicious updates to their package dependencies. Studying the npm repository, we observed that many packages in the npm repository that are used in Node.js applications perform only simple computations and do not need access to filesystem or network APIs. This offers the opportunity to enforce least-privilege design per package, protecting applications and package dependencies from malicious updates. We propose a lightweight permission system that protects Node.js applications by enforcing package permissions at runtime. We discuss the design space of solutions and show that our system makes a large number of packages much harder to be exploited, almost for free.},
   doi={10.1109/ICSE43902.2021.00121},
+}
+
+@inproceedigns{coker2021framefix,
+  author={Coker, Zack and Sunshine, Joshua and Le Goues, Claire},
+  booktitle=SANER,
+  abbr={SANER},
+  pdf={coker2021framefix.pdf},
+  abstract = {Software frameworks make developing applications for a specific domain easier than doing so from scratch. Unfortunately, frameworks can also place unexpected requirements on a developer's application, which can, in turn, lead to application bugs in the development process. We propose an automated technique for repairing violations of state-based framework requirements, FrameFix. First, developers of a framework can encode state-based framework requirements. Then, FrameFix automatically checks whether a developer's application follows the encoded requirements. Once a violation of these requirements has been detected, FrameFix tries three different approaches - reordering method calls, moving method calls to different method definitions, and comparing the faulty method to similarly defined methods on GitHub. These repair approaches are based on the principles of how frameworks interact with framework applications: object protocols and inversion of control. To demonstrate that these principles can be used to aid automated repair for framework applications, we created a sample implementation of FrameFix for Android applications. Our evaluation shows that FrameFix is effective, repairing both real bugs in real applications, and a large number and variety of injected defects.},
+  title={FrameFix: Automatically Repairing Statically-Detected Directive Violations in Framework Applications}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={201-212},
+  doi={10.1109/SANER50967.2021.00027}},
+
 }
 
 

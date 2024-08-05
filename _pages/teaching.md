@@ -8,7 +8,12 @@ nav: true
 
 ## teaching
 
-- :new: Spring 2021, [17-450/950: Crafting Software](https://cmu-crafting-software.github.io/)
+- Spring 2024, [17-950: Crafting Software](https://cmu-crafting-software.github.io/)
+- Fall 2023, 17-415: Software Engineering Reflection
+- Fall 2022, 17-415: Software Engineering Reflection
+- Spring 2022, [17-950: Crafting Software](https://cmu-crafting-software.github.io/)
+- Fall 2021, 17-415: Software Engineering Reflection
+- Spring 2021, [17-950: Crafting Software](https://cmu-crafting-software.github.io/)
 - Fall 2020, 17-415/905: Software Engineering Reflection
 - Fall 2019, 17-437/17-637: Web Application Development
 - Fall 2018, 17-437/17-637: Web Application Development
@@ -21,50 +26,67 @@ nav: true
 
 ##### phd students
 
-- [Jenna Wise](https://www.cs.cmu.edu/~jlwise/) (co-advised by [Jonathan Aldrich](http://www.cs.cmu.edu/~aldrich/))
-- [Wode "Nimo" Ni](http://www.cs.cmu.edu/~woden/) (co-advised by [Ken Koedinger](http://pact.cs.cmu.edu/koedinger.html)))
+- [Wode "Nimo" Ni](http://www.cs.cmu.edu/~woden/) (co-advised by [Ken Koedinger](http://pact.cs.cmu.edu/koedinger.html))
 - [Matthew Davis](http://cmumatt.github.io) (co-advised by [Brad Myers](https://www.cs.cmu.edu/~bam/))
-- [Sam Estep](https://samestep.com/) (co-advised by [Keenan Crane](https://www.cs.cmu.edu/~kmcrane/))
+- [Sam Estep](https://samestep.com/)
 - [Ian McCormack](https://icmccorm.me/) (co-advised by [Jonathan Aldrich](http://www.cs.cmu.edu/~aldrich/))
-- [Katherine Ye](http://www.cs.cmu.edu/~kqy/) (collaborator; advised by Jonathan Aldrich and Keenan Crane)
+- [Hwei-Shin Harriman](https://hsharriman.github.io/) (co-advised by [Dominik Moritz](https://www.domoritz.de/))
+- [Yiliang Liang](https://www.linkedin.com/in/yiliang-liang-a3631a138/) (co-advised by [Eunsuk Kang](https://eskang.github.io/))
 
 ##### undergraduate students
 
-- [Max Krieger](https://a9.io/)
-- [Hwei-Shin Harriman](https://hsharriman.github.io/)
+- Rijul Jain (Summer 2023, AY2024-25)
+- Amy Wei (Summers 2023 and 2024)
+- Maggie Hollis (Summer 2024)
+- Rainy Jin (Summer 2024)
+- Kyle Lee (Summer 2024)
+- Avinash Palliyil (Summer 2024)
+- Griffin Teller (Summer 2024)
 
 ## alumni
 
+##### phd alumni
+
+- [Jenna Wise](https://www.cs.cmu.edu/~jlwise/) (co-advised by [Jonathan Aldrich](http://www.cs.cmu.edu/~aldrich/)), now an Assistant Professor at Purdue ECE
+
 ##### phd thesis committees
 
-- [Michael Coblenz](http://www.cs.umd.edu/~mcoblenz/)
-- Zack Coker
+- [Michael Coblenz](https://cseweb.ucsd.edu/~mcoblenz/), now an Assistant Professor at UCSD
+- [Zack Coker](https://zackc.github.io/)
 
-##### masters students
+##### masters alumni
 
 - Dor Ma'ayan (visitor from Technion---Israel Institute of Technology)
 - Johann Thor Mogensen Ingibergsson (visitor from University of Southern Denmark)
 - Waqar Ahmad
 - Darpan Saini
 
-##### undergraduate students
+##### undergraduate alumni
 
-- Lavinia Dunagan (Summer 2021)
-- Hita Kambhamettu (Summer 2021)
-- Xin Ran "Mia" Tang (Fall 2020 and Spring 2021)
-- Will Rinkoff (Spring 2021)
+- Raven Rothkopf (Summer 2023)
+- Tomas Dugan (Summer 2023)
+- Yonah Goldberg (Spring 2023)
+- Will Rinkoff (Spring 2021, Spring 2023)
+- Yiliang Liang (Summer 2022)
+- Sang Choi (Summer 2022)
+- [Max Krieger](https://a9.io/) (2019—2022)
+- [Hwei-Shin Harriman](https://hsharriman.github.io/) (Summer 2022),🎖ACM SPLASH Student Research Competition (SRC) Winner
+- Helena Yang (Summer 2021)
+- [Lavinia Dunagan](https://www.si.umich.edu/people/lavinia-dunagan) (Summer 2021)
+- [Hita Kambhamettu](https://hita-k.github.io/) (Summer 2021)
+- [Xin Ran "Mia" Tang](https://www.mia-tang.com/) (Fall 2020 and Spring 2021)
 - Stella Trout (Summer 2020)
-- Courtney Miller (Summer 2019)
-- Anael Kuperwajs Cohen (Summer 2019)
+- [Courtney Miller](https://courtney-e-miller.github.io/) (Summer 2019)
+- [Anael Kuperwajs Cohen](https://anaelkuperwajs.github.io/) (Summer 2019)
 - Gauri Kambhatla (Summer 2019)
-- Sam Estep (Summer 2019)
+- [Sam Estep](https://samestep.com/) (Summer 2019)
 - Lily Shellhammer (Summer 2018)
 - Miles Baker (Summer 2018)
 - [Paulette Koronkevich](https://koronkevi.ch/) (Summer 2018)
 - [Wode "Nimo" Ni](http://www.cs.cmu.edu/~woden/) (Summers 2017 and 2018)
-- Celeste Barnaby (Summer 2017)
+- [Celeste Barnaby](https://www.cs.utexas.edu/~celesteb/) (Summer 2017)
 - Tyler Etzel (Summers 2016 and 2017)
 - Whitney Nelson (Summer 2016)
 - [David Widder](http://davidwidder.me/) (Summer 2016)
 - Sophie Gairo (Summer 2015)
-- [Sarah Chasins](https://schasins.com/) (Summer 2011)
+- [Sarah Chasins](https://schasins.com/) (Summer 2011) 🎖ACM Student Research Competition Grand Finals Winner
