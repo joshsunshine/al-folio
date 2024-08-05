@@ -16,6 +16,52 @@ string{aps = {American Physical Society,}}
 @string{TOSEM = {ACM Transactions on Software Engineering and Methodology (TOSEM)}}
 @string{SANER = {IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)}}
 @string{ESECFSE = {Proc. of the ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)}}
+@string{L-at-S = {Proc. of the ACM Conference on Learning @ Scale}}
+
+
+@inproceedings{edgeworth,
+author = {Ni, Wode and Estep, Sam and Harriman, Hwei-Shin and Koedinger, Kenneth R. and Sunshine, Joshua},
+title = {Edgeworth: Efficient and Scalable Authoring of Visual Thinking Activities},
+year = {2024},
+isbn = {9798400706332},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3657604.3662034},
+doi = {10.1145/3657604.3662034},
+abstract = {Visual thinking with diagrams is a crucial skill for learning and problem-solving in STEM subjects. To improve in this area, students need a variety of visual problems for deliberate practice. However, in our interviews, educators shared that they struggle to create these practice exercises because of limitations of existing tools. We introduce Edgeworth, a tool designed to help educators easily create visual problems. Edgeworth works in two main ways: firstly, it takes a single diagram from the user and systematically alters it to produce many variations, which the educator can then choose from to create multiple problems. Secondly, it automates the layout of diagrams, ensuring consistent high quality without the need for manual adjustments. To assess Edgeworth, we carried out case studies, a technical evaluation, and expert walkthrough demonstrations. We show that Edgeworth can create problems in three domains: geometry, chemistry, and discrete math. These problems were authored in just 15 lines of Edgeworth code on average. Edgeworth generated usable answer options within the first 10 diagram variations in 87\% of authored problems. Finally, educators gave positive feedback on Edgeworth's utility and the real-world applicability of its outputs.},
+booktitle = L-at-S,
+pages = {98–109},
+numpages = {12},
+keywords = {diagram authoring, diagrammatic problems, educational content authoring},
+location = {Atlanta, GA, USA},
+series = {L@S '24},
+selected = {true},
+pdf = {edgeworth.pdf},
+award = {Best Paper Nominee},
+abbr={L@S}
+}
+
+@article{REUs-neccessary,
+author = {Sunshine, Joshua and Velez-Ginorio, Joey},
+title = {Research Experiences for Undergraduates Are Necessary for an Equitable Research Community},
+year = {2024},
+issue_date = {August 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {67},
+number = {8},
+issn = {0001-0782},
+url = {https://doi.org/10.1145/3665517},
+doi = {10.1145/3665517},
+abstract = {Encouraging the expansion of undergraduate research programs.},
+journal = {Communications of the ACM},
+month = {aug},
+pages = {26–28},
+numpages = {3},
+abbr={CACM},
+pdf={REUs-neccessary.pdf},
+html={https://cacm.acm.org/opinion/research-experiences-for-undergraduates-are-necessary-for-an-equitable-research-community/}
+}
 
 
 @inproceedings{davis2024nanofuzz,
@@ -27,7 +73,8 @@ string{aps = {American Physical Society,}}
   doi = {10.1145/3611643.3616327},
   abstract = {In the United States alone, software testing labor is estimated to cost $48 billion USD per year. Despite widespread test execution automation and automation in other areas of software engineering, test suites continue to be created manually by software engineers. We have built a test generation tool, called NaNofuzz, that helps users find bugs in their code by suggesting tests where the output is likely indicative of a bug, e.g., that return NaN (not-a-number) values. NaNofuzz is an interactive tool embedded in a development environment to fit into the programmer's workflow. NaNofuzz tests a function with as little as one button press, analyses the program to determine inputs it should evaluate, executes the program on those inputs, and categorizes outputs to prioritize likely bugs. We conducted a randomized controlled trial with 28 professional software engineers using NaNofuzz as the intervention treatment and the popular manual testing tool, Jest, as the control treatment. Participants using NaNofuzz on average identified bugs more accurately (p < .05, by 30\%), were more confident in their tests (p < .03, by 20\%), and finished their tasks more quickly (p < .007, by 30\%).},
   pdf = {davis2024nanofuzz.pdf},
-  abbr={ESEC/FSE}
+  abbr={ESEC/FSE},
+  selected={true}
 }
 
 @article{davis2023purse,
@@ -76,7 +123,7 @@ string{aps = {American Physical Society,}}
   abbr = {UIST},
   pdf = {ni2021recode.pdf},
   html = {https://dl.acm.org/doi/fullHtml/10.1145/3472749.3474748},
-  selected = {true}
+  selected = {false}
 }
 
 @article{chasins2021PLandHCI,
@@ -97,7 +144,6 @@ pages = {98–106},
 abbr={CACM},
 numpages = {9},
 pdf = {chasins2021PLandHCI.pdf},
-selected = {true},
 html = {https://cacm.acm.org/magazines/2021/8/254314-pl-and-hci/fulltext},
 }
 
@@ -277,7 +323,6 @@ numpages = {14},
 keywords = {information visualization, diagram authoring, conceptual diagramming},
 location = {Honolulu, HI, USA},
 series = {CHI '20},
-selected = {true},
 pdf = {conceptualDiagrams.pdf},
 html = {https://dl.acm.org/doi/fullHtml/10.1145/3313831.3376253},
 award = {Best Paper Honourable Mention},
@@ -749,6 +794,9 @@ abbr={CHI}
   abstract={Blockchains have been proposed to support transactions on distributed, shared state, but hackers have exploited security vulnerabilities in existing programs. In this paper, we describe how we are applying user-centered design in the creation of Obsidian, a new language that uses typestate and linearity to support stronger safety guarantees than current approaches for programming blockchain systems. We show how an iterative, user-centered design process can be used to elicit design feedback and show how we incorporated that feedback into the language. We found that formative user studies, even with a small number of participants, can lead to useful insights in language design. The study results motivated important language changes, such as adding explicit ownership transfer syntax and changing the structure of state initialization in state transitions.},
   abbr={HCI Blockchain}
 }
+
+
+
 
 
 
