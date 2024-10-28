@@ -8,7 +8,6 @@ nav: true
 
 ##### phd students
 
-- [Wode "Nimo" Ni](http://www.cs.cmu.edu/~woden/) (co-advised by [Ken Koedinger](http://pact.cs.cmu.edu/koedinger.html))
 - [Matthew Davis](http://cmumatt.github.io) (co-advised by [Brad Myers](https://www.cs.cmu.edu/~bam/))
 - [Sam Estep](https://samestep.com/)
 - [Ian McCormack](https://icmccorm.me/) (co-advised by [Jonathan Aldrich](http://www.cs.cmu.edu/~aldrich/))
@@ -28,7 +27,7 @@ nav: true
 ## alumni
 
 ##### phd alumni
-
+- [Wode "Nimo" Ni](http://www.cs.cmu.edu/~woden/) (co-advised by [Ken Koedinger](http://pact.cs.cmu.edu/koedinger.html)), now at [Brilliant](https://brilliant.org/)
 - [Jenna Wise](https://www.cs.cmu.edu/~jlwise/) (co-advised by [Jonathan Aldrich](http://www.cs.cmu.edu/~aldrich/)), now an Assistant Professor at Purdue ECE
 
 ##### phd thesis committees

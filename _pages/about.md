@@ -17,7 +17,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am an Assistant Professor in the Institute for Software Research at Carnegie Mellon University. I have broad research interests at the intersection of programming languages and human-computer interaction. I am particularly interested in better understanding of the factors that influence the usability of reusable software components.
+I am an Assistant Professor of [Computer Science](https://www.cs.cmu.edu/) at [Carnegie Mellon University](https://www.cmu.edu/). My home department is the [Software and Societal Systems Department (S3D)](https://s3d.cmu.edu/) and I have a courtesy appointment in the [Human-Computer Interacation Institute](https://hcii.cmu.edu/). 
+
+I have broad research interests at the intersection of programming languages and human-computer interaction. I am particularly interested in better understanding of the factors that influence the usability of reusable software components.
 
 I am fortunate to work with amazing students. See my [teaching and advising page](./teaching/) for details.
 

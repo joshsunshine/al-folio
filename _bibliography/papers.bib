@@ -19,6 +19,52 @@ string{aps = {American Physical Society,}}
 @string{L-at-S = {Proc. of the ACM Conference on Learning @ Scale}}
 
 
+@InProceedings{codifying-visual-representations,
+author="Ni, Wode
+and Estep, Sam
+and Harriman, Hwei-Shin
+and Minar{\v{c}}{\'i}k, Ji{\v{r}}{\'i}
+and Sunshine, Joshua",
+editor="Lemanski, Jens
+and Johansen, Mikkel Willum
+and Manalo, Emmanuel
+and Viana, Petrucio
+and Bhattacharjee, Reetu
+and Burns, Richard",
+title="Codifying Visual Representations",
+booktitle="Diagrammatic Representation and Inference (DIAGRAMS)",
+year="2024",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="454--457",
+abbr={DIAGRAMS},
+pdf={codifying-visual-representations.pdf},
+abstract="Making visually appealing and meaningful diagrams involves craftsmanship in designing the visual representation, drawing shapes, and laying them out. Can the effort spent on diagrams by an expert be reused by others, especially those without the expertise in design and drawing? In this paper, we outline our prior work on Penrose, a diagramming tool with first-class support for reusing visual representations. The nature of our approach to reusability necessitates a domain-agnostic method to automatically lay out a diagram. We highlight our existing approach for general diagram layout and styling, and propose a new composable approach for codifying visual representations to reuse expertise that cuts across domains.",
+isbn="978-3-031-71291-3"
+}
+
+@InProceedings{rose,
+  author =	{Estep, Sam and Ni, Wode and Rothkopf, Raven and Sunshine, Joshua},
+  title =	{{Rose: Composable Autodiff for the Interactive Web}},
+  booktitle =	ECOOP,
+  pages =	{15:1--15:27},
+  series =	{Leibniz International Proceedings in Informatics (LIPIcs)},
+  ISBN =	{978-3-95977-341-6},
+  ISSN =	{1868-8969},
+  year =	{2024},
+  volume =	{313},
+  editor =	{Aldrich, Jonathan and Salvaneschi, Guido},
+  publisher =	{Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
+  address =	{Dagstuhl, Germany},
+  URL =		{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECOOP.2024.15},
+  URN =		{urn:nbn:de:0030-drops-208642},
+  doi =		{10.4230/LIPIcs.ECOOP.2024.15},
+  abbr={ECOOP},
+  pdf={rose.pdf},
+  abstract={Reverse-mode automatic differentiation (autodiff) has been popularized by deep learning, but its ability to compute gradients is also valuable for interactive use cases such as bidirectional computer-aided design, embedded physics simulations, visualizing causal inference, and more. Unfortunately, the web is ill-served by existing autodiff frameworks, which use autodiff strategies that perform poorly on dynamic scalar programs, and pull in heavy dependencies that would result in unacceptable webpage sizes. This work introduces Rose, a lightweight autodiff framework for the web using a new hybrid approach to reverse-mode autodiff, blending conventional tracing and transformation techniques in a way that uses the host language for metaprogramming while also allowing the programmer to explicitly define reusable functions that comprise a larger differentiable computation. We demonstrate the value of the Rose design by porting two differentiable physics simulations, and evaluate its performance on an optimization-based diagramming application, showing Rose outperforming the state-of-the-art in web-based autodiff by multiple orders of magnitude.},
+  annote =	{Keywords: Automatic differentiation, differentiable programming, compilers, web}
+}
+
 @inproceedings{edgeworth,
 author = {Ni, Wode and Estep, Sam and Harriman, Hwei-Shin and Koedinger, Kenneth R. and Sunshine, Joshua},
 title = {Edgeworth: Efficient and Scalable Authoring of Visual Thinking Activities},
